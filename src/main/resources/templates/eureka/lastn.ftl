@@ -6,13 +6,13 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
   <head>
     <base href="<@spring.url basePath/>">
-    <title>Eureka - Last N events</title>
+    <title>注册中心 - Last N events</title>
     <link rel="stylesheet" type="text/css" href="eureka/css/wro.css">
   </head>
   <body id="three">
 
     <!--[if lt IE 7]>
-      <p>你在使用一个 <strong>过期的</strong> 浏览器. 请升级到最新的浏览器来提升体验.</p>
+      <p>你正在使用一个 <strong>过期的</strong> 浏览器. 请升级到最新的浏览器来提升体验.</p>
     <![endif]-->
 
     <#include "header.ftl">

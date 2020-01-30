@@ -884,7 +884,7 @@ body {
   font-size: 14px;
   line-height: 1.428571429;
   color: #f1f1f1;
-  background-color: #f1f1f1;
+  background-color: #ffffff; /*#f1f1f1  */
 }
 input,
 button,
@@ -1397,8 +1397,10 @@ pre code {
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  /*padding-left: 15px;
+  padding-right: 15px;*/
+  padding-left: 15%;
+  padding-right: 15%;
 }
 .row {
   margin-left: -15px;
@@ -2060,11 +2062,11 @@ th {
   padding: 8px;
   line-height: 1.428571429;
   vertical-align: top;
-  border-top: 1px solid #34302D;
+  /*border-top: 1px solid #34302D;*/
 }
 .table > thead > tr > th {
   vertical-align: bottom;
-  border-bottom: 2px solid #34302D;
+  /*border-bottom: 2px solid #34302D;*/
 }
 .table > caption + thead > tr:first-child > th,
 .table > colgroup + thead > tr:first-child > th,
@@ -2072,7 +2074,7 @@ th {
 .table > caption + thead > tr:first-child > td,
 .table > colgroup + thead > tr:first-child > td,
 .table > thead:first-child > tr:first-child > td {
-  border-top: 0;
+  /*border-top: 0;*/
 }
 .table > tbody + tbody {
   border-top: 2px solid #34302D;
@@ -3601,7 +3603,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   max-width: none;
 }
 .nav-tabs {
-  border-bottom: 1px solid #34302D;
+  border-bottom: 1px solid rgba(241,240,237,.75);/*#34302D*/
 }
 .nav-tabs > li {
   float: left;
@@ -3614,14 +3616,15 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-radius: 0 0 0 0;
 }
 .nav-tabs > li > a:hover {
-  border-color: #eeeeee #eeeeee #34302D;
+  /*border-color: #eeeeee #eeeeee #34302D;*/
+  border-color: #eeeeee #eeeeee #f68d42;
 }
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
   color: #f1f1f1;
-  background-color: #34302D;
-  border: 1px solid #34302D;
+  background-color: #f68d42;/*#34302D*/
+  border: 1px solid #f68d42;
   border-bottom-color: transparent;
   cursor: default;
 }
@@ -4085,18 +4088,18 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #777;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #f1f1f1;
+  color: #ffffff; /*#f1f1f1*/
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
   color: #f1f1f1;
-  background-color: #6db33f;
+  background-color: rgba(255,255,255,0.1); /*#6db33f*/
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   color: #f1f1f1;
-  background-color: #6db33f;
+  background-color: rgba(255,255,255,0.1);/*#6db33f*/
 }
 .navbar-default .navbar-nav > .disabled > a,
 .navbar-default .navbar-nav > .disabled > a:hover,
@@ -6184,8 +6187,11 @@ p,
 input {
   margin: 0;
   font-weight: 400;
-  font-family: "varela_roundregular", sans-serif;
-  color: #34302d;
+  /*font-family: "varela_roundregular", sans-serif;*/
+  font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+  color: rgba(0,0,0,0.87); /* #34302d*/
+  font-size: 15px;
+  line-height: 20px;
 }
 h1 {
   font-size: 24px;
@@ -6210,27 +6216,34 @@ strong {
   font-family: "montserratregular", sans-serif;
 }
 .navbar {
-  border-top: 4px solid #6db33f;
-  background-color: #ccc;
+  /*border-top: 4px solid #6db33f;*/
+  background: url("../images/bg.png") no-repeat center center;
+  background-size: cover;
+  -webkit-background-size: cover;
   margin-bottom: 0px;
   border-bottom: 0;
   border-left: 0;
   border-right: 0;
 }
 .navbar a.navbar-brand {
-  background: url("../images/spring-logo-eureka.png") -1px -1px no-repeat;
-  margin: 12px 0 6px;
-  width: 300px;
-  height: 46px;
+  /*background: url("../images/spring-logo-eureka.png") -1px -1px no-repeat;*/
+  /*margin: 12px 0 6px;*/
+  width: 420px;
+  height: 50px;
   display: inline-block;
   text-decoration: none;
-  padding: 0;
+  /*padding: 0;*/
+  font-size: 17px;/*24px*/
+  font-weight: bold;
+  /*text-transform: uppercase;*/
+  font-family: "Open Sans", Arial, sans-serif;
+  line-height: 50px;
 }
 .navbar a.navbar-brand span {
   display: block;
   width: 300px;
   height: 46px;
-  background: url("../images/spring-logo-eureka.png") -1px -48px no-repeat;
+  /*background: url("../images/spring-logo-eureka.png") -1px -48px no-repeat;*/
   opacity: 0;
   -moz-transition: opacity 0.12s ease-in-out;
   -webkit-transition: opacity 0.12s ease-in-out;
@@ -6282,10 +6295,11 @@ strong {
   .navbar a.navbar-brand {
     display: block;
     margin: 0 auto 0 auto;
-    width: 200px;
-    height: 50px;
+    width: 220px;/*200px*/
+    height: 68px;/*50px*/
     float: none;
-    background: url("../images/spring-logo-eureka-mobile.png") 0 center no-repeat;
+    /*background: url("../images/spring-logo-eureka-mobile.png") 0 center no-repeat;*/
+    line-height: 19px;
   }
   .homepage-billboard .homepage-subtitle {
     font-size: 21px;
@@ -6307,8 +6321,9 @@ strong {
   }
 }
 .table > thead > tr > th {
-  background-color: #3c3834;
-  color: #f1f1f1;
+  background-color: transparent;/*#3c3834*/
+  color: #202124;/*#f1f1f1*/
+  border: 1px solid #fffeee;
 }
 .table-filter {
   background-color: #34302D;
@@ -6342,9 +6357,13 @@ code {
 .xd-container {
   margin-top: 40px;
   margin-bottom: 100px;
+  /*background: url("../images/banner.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;*/
 }
 h1 {
   margin-bottom: 15px;
+  color: #1967d2;
 }
 .index-page--subtitle {
   font-size: 16px;

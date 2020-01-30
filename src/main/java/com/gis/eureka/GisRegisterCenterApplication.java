@@ -18,7 +18,7 @@ public class GisRegisterCenterApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(GisRegisterCenterApplication.class, args);
-		logger.info("[GisRegisterCenterApplication微服务] 已启动");
+		logger.info("[RegisterCenterApplication微服务] 已启动");
 
 		/*// Eureka是个war包，保证由Spring Boot启动的应用包含内嵌Web容器
 		new SpringApplicationBuilder(EurekaServerApplication.class).web(WebApplicationType.SERVLET).run(args);*/
